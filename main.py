@@ -12,7 +12,7 @@ mid = input("please input music id:")
 
 points = host + mid
 
-header = {'x-lct': lct, 'Accept': 'application/jsom', 'x-lm-did': did, 'timeout': 30, 'User-Agent': 'LineMusic/3.9.2  (iPhone; U; iOS 12.1.4; ja-JP;)', 'Accept-Language': 'ja-JP;q=1', 'Accept-Encoding': 'br, gzip, deflate', 'Cookie': ''}
+header = {'x-lct': lct, 'Accept': 'application/json', 'x-lm-did': did, 'timeout': 30, 'User-Agent': 'LineMusic/3.9.2  (iPhone; U; iOS 12.1.4; ja-JP;)', 'Accept-Language': 'ja-JP;q=1', 'Accept-Encoding': 'br, gzip, deflate', 'Cookie': ''}
 
 p = r.get(points, headers=header)
 
